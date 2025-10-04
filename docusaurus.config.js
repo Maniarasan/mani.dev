@@ -89,6 +89,7 @@ const config = {
           src: "img/logo.svg",
         },
         items: [
+          { type: "doc", docId: "intro", position: "left", label: "Docs" },
           {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
