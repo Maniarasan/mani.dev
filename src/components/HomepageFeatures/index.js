@@ -1,46 +1,61 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
+import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: '👨‍💼 About Me',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Technical Lead with 8+ years of experience driving innovation in AI, web technologies, 
+        and cloud architecture. Based in Chennai, India, I specialize in building scalable 
+        solutions that bridge cutting-edge technology with practical business value.
+        <br /><br />
+        <Link
+          className="button button--secondary button--sm"
+          to="/about">
+          Learn More About Me →
+        </Link>
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: '🚀 Tech Stack & Expertise',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        <strong>AI & Machine Learning:</strong> Vector databases, RAG systems, LLM integration, AI-driven solutions
+        <br /><br />
+        <strong>Web Technologies:</strong> React, Node.js, TypeScript, modern frontend frameworks, API design
+        <br /><br />
+        <strong>Cloud & Architecture:</strong> AWS, Azure, microservices, scalable distributed systems, DevOps practices
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: '💼 Projects & Portfolio',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        I work on diverse projects spanning enterprise applications, AI-powered tools, and 
+        developer productivity solutions. My focus is on creating maintainable, scalable systems 
+        that solve real-world problems.
+        <br /><br />
+        <strong>Key Areas:</strong> Enterprise software, AI/ML applications, developer tooling, 
+        cloud-native architectures, technical leadership
+        <br /><br />
+        <Link
+          className="button button--secondary button--sm"
+          to="/docs/intro">
+          Explore Documentation →
+        </Link>
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({title, description}) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
