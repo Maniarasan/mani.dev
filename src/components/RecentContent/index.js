@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Heading from '@theme/Heading';
 
 export function RecentBlogPosts() {
@@ -21,6 +22,7 @@ export function RecentBlogPosts() {
         date: '2025-10-07T00:26:00+05:30'
       }
     ];
+
     setPosts(blogPosts.slice(0, 2));
   }, []);
 
@@ -36,12 +38,12 @@ export function RecentBlogPosts() {
               <div className="card margin-bottom--md" style={{height: '100%', display: 'flex', flexDirection: 'column'}}>
                 <div className="card__header">
                   <Heading as="h3">
-                    <Link to={post.permalink}>{post.title}</Link>
+                    <Link to={useBaseUrl(post.permalink)}>{post.title}</Link>
                   </Heading>
                 </div>
                 <div className="card__body" style={{flex: 1}}>
-                  <p>{post.description}</p>
-                  <p style={{fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-600)'}}>
+                  {post.description}
+                  <p style={{fontSize: '0.85rem', color: 'var(--ifm-color-emphasis-600)', marginTop: '1rem'}}>
                     <time dateTime={post.date}>
                       {new Date(post.date).toLocaleDateString(undefined, {
                         year: 'numeric',
@@ -54,7 +56,7 @@ export function RecentBlogPosts() {
                   </p>
                 </div>
                 <div className="card__footer">
-                  <Link to={post.permalink} className="button button--secondary button--block">
+                  <Link className="button button--secondary button--block" to={useBaseUrl(post.permalink)}>
                     Read More →
                   </Link>
                 </div>
@@ -86,11 +88,12 @@ export function RecentDocs() {
         date: '2025-10-07T00:43:00+05:30'
       }
     ];
+
     setDocs(docArticles.slice(0, 2));
   }, []);
 
   return (
-    <section className="margin-top--xl margin-bottom--xl" style={{backgroundColor: 'var(--ifm-background-surface-color)', padding: '3rem 0'}}>
+    <section className="margin-top--xl margin-bottom--xl" style={{backgroundColor: 'var(--ifm-color-emphasis-100)', padding: '3rem 0'}}>
       <div className="container">
         <Heading as="h2" style={{textAlign: 'center', marginBottom: '2rem'}}>
           Latest Knowledge Base Articles 📚
@@ -101,12 +104,12 @@ export function RecentDocs() {
               <div className="card margin-bottom--md" style={{height: '100%', display: 'flex', flexDirection: 'column'}}>
                 <div className="card__header">
                   <Heading as="h3">
-                    <Link to={doc.permalink}>{doc.title}</Link>
+                    <Link to={useBaseUrl(doc.permalink)}>{doc.title}</Link>
                   </Heading>
                 </div>
                 <div className="card__body" style={{flex: 1}}>
-                  <p>{doc.description}</p>
-                  <p style={{fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-600)'}}>
+                  {doc.description}
+                  <p style={{fontSize: '0.85rem', color: 'var(--ifm-color-emphasis-600)', marginTop: '1rem'}}>
                     <time dateTime={doc.date}>
                       {new Date(doc.date).toLocaleDateString(undefined, {
                         year: 'numeric',
@@ -119,7 +122,7 @@ export function RecentDocs() {
                   </p>
                 </div>
                 <div className="card__footer">
-                  <Link to={doc.permalink} className="button button--secondary button--block">
+                  <Link className="button button--secondary button--block" to={useBaseUrl(doc.permalink)}>
                     Read More →
                   </Link>
                 </div>
