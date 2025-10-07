@@ -1,7 +1,7 @@
 ---
 title: "Beginning My Blogging Journey"
 authors: [Maniarasan]
-date: 2025-10-07
+date: 2025-10-07T00:26:00+05:30
 tags: [blog, journey, writing]
 ---
 
