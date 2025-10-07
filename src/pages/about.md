@@ -2,17 +2,21 @@
 title: About Me
 ---
 
+<div style="text-align: center; margin-bottom: 2rem;">
+  <img src="https://github.com/Maniarasan.png" alt="Maniarasan Sivaseran" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover; margin-bottom: 1rem;" />
+</div>
+
 # About Me
 
 ## Hi, I'm Maniarasan Sivaseran 👋
 
-I'm a **Technical Lead at Zuper**, driving innovation at the intersection of artificial intelligence, web technologies, and cloud computing. Based in **Chennai, India**, I'm passionate about building scalable, enterprise-grade solutions that solve real-world challenges.
+I'm an **Associate Manager, Software Engineering at Zuper**, driving innovation at the intersection of artificial intelligence, web technologies, and cloud computing. Based in **Chennai, India**, I'm passionate about building scalable, enterprise-grade solutions that solve real-world challenges.
 
 ## Professional Journey
 
 ### Current Role
 
-- **Technical Lead** at Zuper
+- **Associate Manager, Software Engineering** at Zuper
 - Leading teams in developing cutting-edge AI-powered solutions
 - Architecting cloud-native applications for enterprise clients
 - Mentoring developers and fostering a culture of technical excellence
@@ -69,8 +73,8 @@ When I'm not architecting systems or writing code, I focus on:
 
 I'm always excited to discuss technology, collaborate on interesting projects, or exchange ideas. Feel free to reach out!
 
-- **LinkedIn**: [maniarasan-sivaseran](https://www.linkedin.com/in/maniarasan-sivaseran-09494553/)
-- **GitHub**: [Maniarasan](https://github.com/Maniarasan)
-- **Location**: Chennai, India
+- LinkedIn: [maniarasan-sivaseran](https://www.linkedin.com/in/maniarasan-sivaseran-09494553/)
+- GitHub: [Maniarasan](https://github.com/Maniarasan)
+- Location: Chennai, India
 
 This site serves as my digital space where I share my software engineering journey, document learnings, and explore the evolving landscape of technology.
