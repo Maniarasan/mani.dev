@@ -4,7 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
-
+import {RecentBlogPosts, RecentDocs} from '@site/src/components/RecentContent';
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -36,7 +36,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/docs/ai/ai-trends-2025"
             style={{marginRight: '0.75rem', marginBottom: '0.75rem'}}>
-            Documentation 📚
+            Knowledge Base 📚
           </Link>
           <Link
             className="button button--secondary button--lg"
@@ -44,14 +44,6 @@ function HomepageHeader() {
             style={{marginBottom: '0.75rem'}}>
             Blog ✍️
           </Link>
-        </div>
-        <div style={{marginTop: '2rem', fontSize: '0.95rem', opacity: 0.9}}>
-          <p>
-            🎓 Latest: Explore articles on{' '}
-            <Link to="/docs/ai/ai-trends-2025" style={{color: '#fff', textDecoration: 'underline'}}>AI Trends 2025</Link>
-            {' '}and{' '}
-            <Link to="/docs/ai/getting-started-with-vector-search" style={{color: '#fff', textDecoration: 'underline'}}>Vector Search</Link>
-          </p>
         </div>
       </div>
     </header>
@@ -69,6 +61,8 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <RecentBlogPosts />
+        <RecentDocs />
       </main>
     </Layout>
   );
