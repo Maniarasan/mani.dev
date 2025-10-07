@@ -4,9 +4,13 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
+
 import styles from './index.module.css';
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
+  const designation = siteConfig.customFields?.designation || 'Technical Lead';
+  
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -14,7 +18,7 @@ function HomepageHeader() {
           Welcome to {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">
-          Technical Lead | AI, Web Technologies & Cloud Architecture
+          {designation} | AI, Web Technologies & Cloud Architecture
         </p>
         <p style={{fontSize: '1.1rem', marginTop: '1rem', maxWidth: '700px', margin: '1rem auto 2rem'}}>
           Exploring the intersection of artificial intelligence, modern web development, 
@@ -41,7 +45,7 @@ function HomepageHeader() {
             Blog ✍️
           </Link>
         </div>
-        <div style={{marginTop: '2rem', fontSize: '0.9rem', opacity: 0.8}}>
+        <div style={{marginTop: '2rem', fontSize: '0.95rem', opacity: 0.9}}>
           <p>
             🎓 Latest: Explore articles on{' '}
             <Link to="/docs/ai/ai-trends-2025" style={{color: '#fff', textDecoration: 'underline'}}>AI Trends 2025</Link>
@@ -53,12 +57,15 @@ function HomepageHeader() {
     </header>
   );
 }
+
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
+  const designation = siteConfig.customFields?.designation || 'Technical Lead';
+  
   return (
     <Layout
       title={`Home`}
-      description="Technical portfolio and knowledge base of Maniarasan Sivaseran - Technical Lead specializing in AI, Web Technologies, and Cloud Computing. Explore articles on machine learning, software architecture, and modern development practices.">
+      description={`Technical portfolio and knowledge base of Maniarasan Sivaseran - ${designation} specializing in AI, Web Technologies, and Cloud Computing. Explore articles on machine learning, software architecture, and modern development practices.`}>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
