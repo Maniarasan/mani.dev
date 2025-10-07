@@ -2,9 +2,7 @@
 title: About Me
 ---
 
-<div style="text-align: center; margin-bottom: 2rem;">
-  <img src="https://github.com/Maniarasan.png" alt="Maniarasan Sivaseran" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover; margin-bottom: 1rem;" />
-</div>
+<img src="https://github.com/Maniarasan.png" alt="Maniarasan Sivaseran" width="200" style="border-radius:100px;" />
 
 # About Me
 
