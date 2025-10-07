@@ -18,25 +18,37 @@ export function RecentBlogPosts() {
     const blogPosts = [
       {
         title: 'The Importance of Today',
-        permalink: '/blog/the-importance-of-today',
+        slug: 'the-importance-of-today',
         description: 'Exploring the significance of living in the present moment and making the most of each day',
-        date: '2025-10-07T08:28:00+05:30'
+        date: '2025-10-07'
       },
       {
         title: 'Zuper Roofing Digital Transformation',
-        permalink: '/blog/zuper-roofing-digital-transformation',
+        slug: 'zuper-roofing-digital-transformation',
         description: 'How Zuper is revolutionizing the roofing industry through digital transformation and field service management',
-        date: '2025-10-07T08:28:00+05:30'
+        date: '2025-10-07'
       },
       {
         title: 'Blogging Journey',
-        permalink: '/blog/blogging-journey',
+        slug: 'blogging-journey',
         description: 'Reflections on starting and maintaining a technical blog, sharing knowledge and experiences',
-        date: '2025-10-07T08:28:00+05:30'
+        date: '2025-10-07T00:26:00+05:30'
       }
     ];
 
-    setPosts(blogPosts.slice(0, 3));
+    // Build Docusaurus blog permalinks: /blog/YYYY/MM/DD/slug
+    const postsWithPermalinks = blogPosts.map(post => {
+      const dateObj = new Date(post.date);
+      const year = dateObj.getFullYear();
+      const month = String(dateObj.getMonth() + 1).padStart(2, '0');
+      const day = String(dateObj.getDate()).padStart(2, '0');
+      return {
+        ...post,
+        permalink: `/blog/${year}/${month}/${day}/${post.slug}`
+      };
+    });
+
+    setPosts(postsWithPermalinks.slice(0, 3));
   }, []);
 
   return (
@@ -75,14 +87,16 @@ export function RecentBlogPosts() {
                   boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
                 }}
               >
-                <div className="card__header" style={{backgroundColor: '#f8fcff', borderBottom: '1px solid #e0f2ff'}}>
-                  <Heading as="h3" style={{color: '#2e8555', fontWeight: '600'}}>
-                    <Link style={{color: '#2e8555'}} to={post.permalink}>{post.title}</Link>
+                <div className="card__header" style={{backgroundColor: '#e8f4ff', borderBottom: '1px solid #d0e8ff'}}>
+                  <Heading as="h3" style={{color: '#1976d2', fontWeight: '600'}}>
+                    <Link to={post.permalink} style={{color: '#1976d2', textDecoration: 'none'}}>
+                      {post.title}
+                    </Link>
                   </Heading>
                 </div>
-                <div className="card__body" style={{flex: 1, color: '#525860'}}>
+                <div className="card__body" style={{flex: '1', color: '#555'}}>
                   {post.description}
-                  <p style={{fontSize: '0.875rem', color: '#8a8f98', marginTop: '1rem'}}>
+                  <p style={{fontSize: '0.85rem', color: '#777', marginTop: '1rem'}}>
                     <time dateTime={post.date}>
                       {new Date(post.date).toLocaleDateString(undefined, {
                         year: 'numeric',
@@ -168,14 +182,16 @@ export function RecentDocs() {
                   boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
                 }}
               >
-                <div className="card__header" style={{backgroundColor: '#f5f7fa', borderBottom: '1px solid #e9ecef'}}>
-                  <Heading as="h3" style={{color: '#1c1e21', fontWeight: '600'}}>
-                    <Link style={{color: '#1c1e21'}} to={doc.permalink}>{doc.title}</Link>
+                <div className="card__header" style={{backgroundColor: '#f8f9fa', borderBottom: '1px solid #dee2e6'}}>
+                  <Heading as="h3" style={{color: '#343a40', fontWeight: '600'}}>
+                    <Link to={doc.permalink} style={{color: '#343a40', textDecoration: 'none'}}>
+                      {doc.title}
+                    </Link>
                   </Heading>
                 </div>
-                <div className="card__body" style={{flex: 1, color: '#525860'}}>
+                <div className="card__body" style={{flex: '1', color: '#555'}}>
                   {doc.description}
-                  <p style={{fontSize: '0.875rem', color: '#8a8f98', marginTop: '1rem'}}>
+                  <p style={{fontSize: '0.85rem', color: '#777', marginTop: '1rem'}}>
                     <time dateTime={doc.date}>
                       {new Date(doc.date).toLocaleDateString(undefined, {
                         year: 'numeric',
