@@ -2,7 +2,6 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
-
 const FeatureList = [
   {
     title: '👨‍💼 About Me',
@@ -11,7 +10,7 @@ const FeatureList = [
         Technical Lead with 8+ years of experience driving innovation in AI, web technologies, 
         and cloud architecture. Based in Chennai, India, I specialize in building scalable 
         solutions that bridge cutting-edge technology with practical business value.
-        <br /><br />
+        <br/><br/>
         <Link
           className="button button--secondary button--sm"
           to="/about">
@@ -25,9 +24,9 @@ const FeatureList = [
     description: (
       <>
         <strong>AI & Machine Learning:</strong> Vector databases, RAG systems, LLM integration, AI-driven solutions
-        <br /><br />
+        <br/><br/>
         <strong>Web Technologies:</strong> React, Node.js, TypeScript, modern frontend frameworks, API design
-        <br /><br />
+        <br/><br/>
         <strong>Cloud & Architecture:</strong> AWS, Azure, microservices, scalable distributed systems, DevOps practices
       </>
     ),
@@ -39,20 +38,19 @@ const FeatureList = [
         I work on diverse projects spanning enterprise applications, AI-powered tools, and 
         developer productivity solutions. My focus is on creating maintainable, scalable systems 
         that solve real-world problems.
-        <br /><br />
-        <strong>Key Areas:</strong> Enterprise software, AI/ML applications, developer tooling, 
+        <br/><br/>
+        Key Areas: Enterprise software, AI/ML applications, developer tooling, 
         cloud-native architectures, technical leadership
-        <br /><br />
+        <br/><br/>
         <Link
           className="button button--secondary button--sm"
-          to="/docs/intro">
+          to="/docs/ai/ai-trends-2025">
           Explore Documentation →
         </Link>
       </>
     ),
   },
 ];
-
 function Feature({title, description}) {
   return (
     <div className={clsx('col col--4')}>
@@ -63,7 +61,6 @@ function Feature({title, description}) {
     </div>
   );
 }
-
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
