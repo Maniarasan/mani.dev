@@ -2,13 +2,24 @@
 title: About Me
 ---
 
-<img src="https://github.com/Maniarasan.png" alt="Maniarasan Sivaseran" width="200" />
-
 # About Me
 
 ## Hi, I'm Maniarasan Sivaseran 👋
 
-I'm an **Associate Manager, Software Engineering at Zuper**, driving innovation at the intersection of artificial intelligence, web technologies, and cloud computing. Based in **Chennai, India**, I'm passionate about building scalable, enterprise-grade solutions that solve real-world challenges.
+<div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+  <img
+    src="https://github.com/Maniarasan.png"
+    alt="Maniarasan Sivaseran"
+    width="150"
+    style={{ borderRadius: '10px' }}
+  />
+  <div>
+    I'm an <strong>Associate Manager, Software Engineering at Zuper</strong>, driving innovation at the intersection of artificial intelligence, web technologies, and cloud computing.  
+    Based in <strong>Chennai, India</strong>, I'm passionate about building scalable, enterprise-grade solutions that solve real-world challenges.
+  </div>
+</div>
+
+
 
 ## Professional Journey
 
