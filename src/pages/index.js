@@ -4,9 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
-
 import styles from './index.module.css';
-
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -32,7 +30,7 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro"
+            to="/docs/ai/ai-trends-2025"
             style={{marginRight: '0.75rem', marginBottom: '0.75rem'}}>
             Documentation 📚
           </Link>
@@ -43,7 +41,7 @@ function HomepageHeader() {
             Blog ✍️
           </Link>
         </div>
-        <div style={{marginTop: '2.5rem', fontSize: '1rem', opacity: 0.9}}>
+        <div style={{marginTop: '2rem', fontSize: '0.9rem', opacity: 0.8}}>
           <p>
             🎓 Latest: Explore articles on{' '}
             <Link to="/docs/ai/ai-trends-2025" style={{color: '#fff', textDecoration: 'underline'}}>AI Trends 2025</Link>
@@ -55,7 +53,6 @@ function HomepageHeader() {
     </header>
   );
 }
-
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
