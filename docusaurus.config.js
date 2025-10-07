@@ -3,27 +3,43 @@
 // (when paired with `@ts-check`).
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
+
 import { themes as prismThemes } from "prism-react-renderer";
+
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+
+// Parameterized designation to be used across the site
+const DESIGNATION = "Associate Manager, Software Engineering";
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Mani.dev",
   tagline: "Software Engineering Knowledge Base",
   favicon: "img/favicon.ico",
+
+  // Custom fields for site-wide use
+  customFields: {
+    designation: DESIGNATION,
+  },
+
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
+
   // Set the production url of your site here
   url: "https://maniarasan.github.io/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/mani.dev/",
+
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "Maniarasan", // Usually your GitHub org/user name.
   projectName: "mani.dev", // Usually your repo name.
+
   onBrokenLinks: "throw",
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -31,6 +47,7 @@ const config = {
     defaultLocale: "en",
     locales: ["en"],
   },
+
   presets: [
     [
       "classic",
@@ -45,6 +62,7 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          sortPosts: 'descending', // Sort blog posts by date, latest first
           feedOptions: {
             type: ["rss", "atom"],
             xslt: true,
@@ -64,6 +82,7 @@ const config = {
       }),
     ],
   ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -141,4 +160,5 @@ const config = {
       },
     }),
 };
+
 export default config;
