@@ -80,7 +80,7 @@ const config = {
         },
         items: [
           { to: "/", label: "Home", position: "left" },
-          { to: "/docs/ai", label: "Docs", position: "left" },
+          { to: "/docs/ai/ai-trends-2025", label: "Docs", position: "left" },
           { to: "/blog", label: "Blog", position: "left" },
           { to: "/about", label: "About Me", position: "left" },
           {
@@ -98,7 +98,7 @@ const config = {
             items: [
               {
                 label: "Documentation",
-                to: "/docs/ai",
+                to: "/docs/ai/ai-trends-2025",
               },
               {
                 label: "Blog",
