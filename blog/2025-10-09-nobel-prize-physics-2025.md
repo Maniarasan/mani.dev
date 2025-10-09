@@ -1,7 +1,7 @@
 ---
 slug: nobel-prize-physics-2025
 title: "Nobel Prize in Physics 2025: What It Means for the IT Industry"
-authors: [mani]
+authors: [Maniarasan]
 tags: [nobel-prize, physics, quantum-computing, IT-industry, technology]
 ---
 
