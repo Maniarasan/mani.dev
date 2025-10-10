@@ -1,18 +1,23 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
-import {RecentBlogPosts, RecentDocs} from '@site/src/components/RecentContent';
-import styles from './index.module.css';
+import clsx from "clsx";
+import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
+import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import Heading from "@theme/Heading";
+import {
+  RecentBlogPosts,
+  RecentDocs,
+} from "@site/src/components/RecentContent";
+import styles from "./index.module.css";
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  const designation = siteConfig.customFields?.designation || 'Technical Lead';
-  
+  const { siteConfig } = useDocusaurusContext();
+  const designation =
+    siteConfig.customFields?.designation ||
+    "Associate Manager, Software Engineering";
+
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
           Welcome to {siteConfig.title}
@@ -20,28 +25,38 @@ function HomepageHeader() {
         <p className="hero__subtitle">
           {designation} | AI, Web Technologies & Cloud Architecture
         </p>
-        <p style={{fontSize: '1.1rem', marginTop: '1rem', maxWidth: '700px', margin: '1rem auto 2rem'}}>
-          Exploring the intersection of artificial intelligence, modern web development, 
-          and scalable cloud solutions. Sharing insights, knowledge, and experiences 
-          from my journey in software engineering.
+        <p
+          style={{
+            fontSize: "1.1rem",
+            marginTop: "1rem",
+            maxWidth: "700px",
+            margin: "1rem auto 2rem",
+          }}
+        >
+          Exploring the intersection of artificial intelligence, modern web
+          development, and scalable cloud solutions. Sharing insights,
+          knowledge, and experiences from my journey in software engineering.
         </p>
         <div className={styles.buttons}>
           <Link
             className="button button--primary button--lg"
             to="/about"
-            style={{marginRight: '0.75rem', marginBottom: '0.75rem'}}>
+            style={{ marginRight: "0.75rem", marginBottom: "0.75rem" }}
+          >
             About Me 👋
           </Link>
           <Link
             className="button button--secondary button--lg"
             to="/docs/ai/ai-trends-2025"
-            style={{marginRight: '0.75rem', marginBottom: '0.75rem'}}>
+            style={{ marginRight: "0.75rem", marginBottom: "0.75rem" }}
+          >
             Knowledge Base 📚
           </Link>
           <Link
             className="button button--secondary button--lg"
             to="/blog"
-            style={{marginBottom: '0.75rem'}}>
+            style={{ marginBottom: "0.75rem" }}
+          >
             Blog ✍️
           </Link>
         </div>
@@ -51,13 +66,16 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
-  const designation = siteConfig.customFields?.designation || 'Technical Lead';
-  
+  const { siteConfig } = useDocusaurusContext();
+  const designation =
+    siteConfig.customFields?.designation ||
+    "Associate Manager, Software Engineering ";
+
   return (
     <Layout
       title={`Home`}
-      description={`Technical portfolio and knowledge base of Maniarasan Sivaseran - ${designation} specializing in AI, Web Technologies, and Cloud Computing. Explore articles on machine learning, software architecture, and modern development practices.`}>
+      description={`Technical portfolio and knowledge base of Maniarasan Sivaseran - ${designation} specializing in AI, Web Technologies, and Cloud Computing. Explore articles on machine learning, software architecture, and modern development practices.`}
+    >
       <HomepageHeader />
       <main>
         <HomepageFeatures />
