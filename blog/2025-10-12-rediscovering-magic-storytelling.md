@@ -1,6 +1,6 @@
 ---
 title: "Rediscovering the Magic of Storytelling: Book Reading, Jeffrey Archer, and the Rise of AI Narratives"
-authors: [mani]
+authors: [Maniarasan]
 date: 2025-10-12
 tags: [books, storytelling, AI, Jeffrey Archer, literature, reading]
 ---
