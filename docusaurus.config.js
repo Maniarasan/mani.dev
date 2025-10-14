@@ -15,7 +15,7 @@ const DESIGNATION = "Associate Manager, Software Engineering";
 const config = {
   title: "Mani.dev",
   tagline: "Software Engineering Knowledge Base",
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon2.ico",
 
   // Custom fields for site-wide use
   customFields: {
