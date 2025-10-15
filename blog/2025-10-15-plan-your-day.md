@@ -1,11 +1,9 @@
-
 ---
 title: "Start Your Day with a Plan"
 authors: [Maniarasan]
 date: 2025-10-09T09:00:00+05:30
 tags: [planning, productivity, work habits]
 ---
-
 Starting your day at the office with a quick plan can make a world of difference. Without a plan, you risk losing track of your priorities and letting your time be consumed by distractions or less important tasks.
 
 ## Why Planning Matters
