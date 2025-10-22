@@ -17,3 +17,203 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+blog:
+  label: Blog
+  permalink: /blog
+  description: Blog-related topics
+
+journey:
+  label: Journey
+  permalink: /journey
+  description: Personal and professional journeys
+
+writing:
+  label: Writing
+  permalink: /writing
+  description: Writing tips and experiences
+
+habits:
+  label: Habits
+  permalink: /habits
+  description: Building and maintaining habits
+
+productivity:
+  label: Productivity
+  permalink: /productivity
+  description: Tips for improving productivity
+
+self-improvement:
+  label: Self-Improvement
+  permalink: /self-improvement
+  description: Personal growth and self-improvement
+
+mindfulness:
+  label: Mindfulness
+  permalink: /mindfulness
+  description: Mindfulness practices and benefits
+
+happiness:
+  label: Happiness
+  permalink: /happiness
+  description: Exploring happiness and well-being
+
+well-being:
+  label: Well-Being
+  permalink: /well-being
+  description: Topics on mental and physical well-being
+
+AI:
+  label: AI
+  permalink: /ai
+  description: Artificial Intelligence topics
+
+sentiment-analysis:
+  label: Sentiment Analysis
+  permalink: /sentiment-analysis
+  description: Sentiment analysis in AI
+
+NLP:
+  label: NLP
+  permalink: /nlp
+  description: Natural Language Processing
+
+framework:
+  label: Framework
+  permalink: /framework
+  description: Software frameworks
+
+TypeScript:
+  label: TypeScript
+  permalink: /typescript
+  description: TypeScript programming language
+
+agents:
+  label: Agents
+  permalink: /agents
+  description: AI agents and their applications
+
+development:
+  label: Development
+  permalink: /development
+  description: Software development
+
+nobel-prize:
+  label: Nobel Prize
+  permalink: /nobel-prize
+  description: Nobel Prize achievements
+
+physics:
+  label: Physics
+  permalink: /physics
+  description: Physics-related topics
+
+quantum-computing:
+  label: Quantum Computing
+  permalink: /quantum-computing
+  description: Quantum computing advancements
+
+IT-industry:
+  label: IT Industry
+  permalink: /it-industry
+  description: IT industry trends
+
+technology:
+  label: Technology
+  permalink: /technology
+  description: Technological advancements
+
+Zuper:
+  label: Zuper
+  permalink: /zuper
+  description: Zuper-related topics
+
+roofing:
+  label: Roofing
+  permalink: /roofing
+  description: Roofing industry insights
+
+field-service:
+  label: Field Service
+  permalink: /field-service
+  description: Field service management
+
+digital-transformation:
+  label: Digital Transformation
+  permalink: /digital-transformation
+  description: Digital transformation in industries
+
+books:
+  label: Books
+  permalink: /books
+  description: Book reviews and recommendations
+
+storytelling:
+  label: Storytelling
+  permalink: /storytelling
+  description: The art of storytelling
+
+Jeffrey-Archer:
+  label: Jeffrey Archer
+  permalink: /jeffrey-archer
+  description: Jeffrey Archer's works
+
+literature:
+  label: Literature
+  permalink: /literature
+  description: Literature and literary analysis
+
+reading:
+  label: Reading
+  permalink: /reading
+  description: Reading habits and tips
+
+planning:
+  label: Planning
+  permalink: /planning
+  description: Planning and organization
+
+work-habits:
+  label: Work Habits
+  permalink: /work-habits
+  description: Effective work habits
+
+machine-learning:
+  label: Machine Learning
+  permalink: /machine-learning
+  description: Machine learning techniques
+
+fine-tuning:
+  label: Fine-Tuning
+  permalink: /fine-tuning
+  description: Fine-tuning AI models
+
+LoRA:
+  label: LoRA
+  permalink: /lora
+  description: Low-Rank Adaptation in AI
+
+PEFT:
+  label: PEFT
+  permalink: /peft
+  description: Parameter-Efficient Fine-Tuning
+
+GPT:
+  label: GPT
+  permalink: /gpt
+  description: Generative Pre-trained Transformers
+
+conscious-living:
+  label: Conscious Living
+  permalink: /conscious-living
+  description: Conscious living and mindfulness
+
+vlog:
+  label: Vlog
+  permalink: /vlog
+  description: Video blogging
+
+ELI5:
+  label: ELI5
+  permalink: /eli5
+  description: Explain Like I'm 5 series
